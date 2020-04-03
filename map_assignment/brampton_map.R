@@ -26,9 +26,11 @@ brampton2 <- get_census(dataset="CA16",regions=list(CSD = 3521010),vectors = c("
 
 glimpse(brampton2)
 names(brampton2)
-
+##Hi Dhruvi, this is a mistake. Vector v_ca16_2604 is the Total number of people who speak official langauges. v_ca16_2606is females and 2605 is males. 
 brampton2 %>%
-  rename("Languages"= `v_CA16_2606: Official languages`)-> brampton3
+  rename("Languages"= `v_CA16_2604: Official languages`)-> brampton3
+#brampton2 %>%
+#  rename("Languages"= `v_CA16_2606: Official languages`)-> brampton3
 
 names(brampton3)
 
